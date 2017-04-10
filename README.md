@@ -1,0 +1,2 @@
+# kinsa
+Kinsa mini project
