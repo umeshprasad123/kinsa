@@ -2,15 +2,13 @@
 Kinsa mini project
 
 Assumptions / shortcuts:
- 1) Defined project properties in a Java class.
+ 1) Defined project properties in a Java class :
+ 
       i) Google Decoding API key
      ii) locations.csv file provided by Kinsa
 
- Please note, before compiling code you need to modify Locations.csv full path information in 
- Java class file :  com.kinsa.rest.data.ProjectProperty
- e.g.  dataFile = "C:/ucp/misc/kinsa/jersey-service/locations.csv"
-
  2) I have used IDE IntelliJ to code this project. All tests successfully pass.  
+    mvn test  <== You can run from command line as well.
 
  3) Use JDK 1.7 to compile
 
