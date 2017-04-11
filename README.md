@@ -6,7 +6,8 @@ Assumptions / shortcuts:
       i) Google Decoding API key
      ii) locations.csv file provided by Kinsa
 
- Please note, before compiling code you need to modify Locations.csv full path in Java class file :  com.kinsa.rest.data.ProjectProperty
+ Please note, before compiling code you need to modify Locations.csv full path information in 
+ Java class file :  com.kinsa.rest.data.ProjectProperty
  e.g.  dataFile = "C:/ucp/misc/kinsa/jersey-service/locations.csv"
 
  2) I have used IDE IntelliJ to code this project. All tests successfully pass.  
@@ -16,14 +17,15 @@ Assumptions / shortcuts:
 Steps :
 
 1) Download code (GitHub or zip file)
-2) from command line ( Windows or  Cygwin on Windows  or Linux shell)
+2) Using command line ( Windows or  Cygwin on Windows  or Linux shell)
+   cd /cygdrive/c/ucp/misc/kinsa/jersey-service
 3) mvn clean compile
 4) mvn test
 5) mvn exec:java
 
 
  Run tests :
-   I have run following tests using Chrome Extension : Advanced REST Client
+   I ran following tests using Chrome  Extension : Advanced REST Client
    i)  List all coffee shops
        http://localhost:8080/kinsa/coffeeshops/all
        Method : Get
@@ -72,8 +74,6 @@ Steps :
         http://localhost:8080/kinsa/coffeeshops/closest?address=%22535+Mission+St.%2C+San+Francisco%2C+CA%22
         Method : Get
         Content-Type: Content-Type: application/x-www-form-urlencoded
-
-
 
 
 
