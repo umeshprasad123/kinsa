@@ -8,7 +8,7 @@ Assumptions / shortcuts:
      ii) locations.csv file provided by Kinsa
 
  2) I have used IDE IntelliJ to code this project. All tests successfully pass.  
-    mvn test  <== You can run from command line as well.
+    mvn test  <== You can run tests from command line as well.
 
  3) Use JDK 1.7 to compile
 
