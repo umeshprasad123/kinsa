@@ -2,23 +2,25 @@ package com.kinsa.rest.util;
 
 import com.kinsa.rest.model.CoffeeShop;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 
 
 public class Helper {
 
     public static void readCoffeeShopLocation ( List<CoffeeShop> csList , String fileName ) {
+        File dataFile = new File(fileName);
+        readCoffeeShopLocation(csList,dataFile);
+    }
+
+    public static void readCoffeeShopLocation ( List<CoffeeShop> csList , File fileName ) {
 
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
 
         try {
-            System.out.println( fileName);
+
             br = new BufferedReader(new FileReader(fileName));
 
             while ((line = br.readLine()) != null) {
