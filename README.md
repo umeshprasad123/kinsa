@@ -8,16 +8,17 @@ Assumptions / shortcuts:
 
  Please note, before compiling code you need to modify Locations.csv full path in Java class file :  com.kinsa.rest.data.ProjectProperty
 
- 2) I have used IDE IntelliJ to code this project. All tests passes however I have not fixed running tests from command line maven.
+ 2) I have used IDE IntelliJ to code this project. All tests successfully pass.  
 
- 3) Used JDK 1.7 to compile
+ 3) Use JDK 1.7 to compile
 
 Steps :
 
 1) Download code (GitHub or zip file)
 2) from command line ( Windows or  Cygwin on Windows  or Linux shell)
 3) mvn clean compile
-4) mvn exec:java
+4) mvn test
+5) mvn exec:java
 
 
  Run tests :
