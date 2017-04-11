@@ -7,6 +7,7 @@ Assumptions / shortcuts:
      ii) locations.csv file provided by Kinsa
 
  Please note, before compiling code you need to modify Locations.csv full path in Java class file :  com.kinsa.rest.data.ProjectProperty
+ e.g.  dataFile = "C:/ucp/misc/kinsa/jersey-service/locations.csv"
 
  2) I have used IDE IntelliJ to code this project. All tests successfully pass.  
 
